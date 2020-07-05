@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="utf-8">
+    <meta name='description' content="Recettes">
+    <title>Les meilleures recettes</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel='stylesheet' type='text/css'>
+    <style>
+        body{
+            background-image: url('home_background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .sidenav{
+            font-size: 30px;
+            background-color: beige;
+            border-style: groove;
+            height: 100%;
+            width: 10%;
+            padding: 8px 8px 8px 8px;
+        }
+
+        .text_black{
+            color: black;
+        }
+
+        h1 {
+            font-family: Lobster, monospace;
+        }
+
+        .container {
+            position: relative;
+            width: 200px;
+            border-style: inset;
+            border-color: beige;
+        }
+
+        .image {
+            display: block;
+            width: 200px;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: beige;
+            cursor: pointer;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .center{
+            margin-left: 25%;
+            margin-right: auto;
+        }
+
+    </style>
+
+    <header>
+        <center>
+            <h1 style="padding-top: 2px; padding-bottom: 2px; background-color: beige; border-style: double; border-color: black; font-size: 40px;">Les recettes d'Hélène</h1>
+        </center>
+
+    </header>
+
+    <body>
+
+        <div class='container center' onclick="location.href='entree.html'">
+            <img src='image/entree.jpg' alt='entree' class='image'>
+            <div class='overlay'>
+                <div class='text'>Entrée</div>
+            </div>
+        </div>
+        <br/>
+        <div class='container center' onclick="location.href='principal.html'">
+            <img src='image/repas_principal.jpg' alt='entree' class='image'>
+            <div class='overlay'>
+                <div class='text'>Repas principal</div>
+            </div>
+        </div>
+        <br/>
+        <div class='container center' onclick="location.href='dessert.html'">
+            <img src='image/dessert.jpg' alt='entree' class='image'>
+            <div class='overlay'>
+                <div class='text'>Dessert</div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
